@@ -1,0 +1,59 @@
+.card-container {
+    width: 300px; /* ou la largeur que vous préférez */
+    height: 500px;
+    border: 1px solid #686464; /* bordure noire */
+    border-radius: 5px; /* coins arrondis */
+    margin: auto; /* centrer la carte dans un conteneur plus grand */
+    overflow: hidden; /* pour s'assurer que tout reste à l'intérieur des coins arrondis */
+    background-color:  #635d5d;;
+    margin-left:auto ;
+    margin-top: 80px;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+  
+  .carte {
+    display: flex;
+    flex-direction: column; /* organise les enfants en colonne */
+    background-color:  #635d5d;
+    
+  }
+  
+  .card-header {
+    padding: 20px;
+    background-color: #635d5d; /* couleur de fond pour l'en-tête */
+    border-bottom: 1px solid #807b7b; /* ligne de séparation */
+    color: #e4dada;
+  }
+  
+  .card-header h2 {
+    margin: 0; /* enlever la marge par défaut du h2 */
+    text-align: center; /* centrer le titre */
+    background-color: #635d5d;
+  }
+  
+  .card-body {
+    padding: 30px;
+    background-color: #635d5d;
+    margin-right: auto;
+    
+  }
+  
+  .radio-option {
+    display: block; /* chaque option sur sa propre ligne */
+    margin: 5px 0; /* ajouter un peu d'espace entre les options */
+    background-color: #635d5d;
+    text-align: left; /* Aligner le texte à gauche */
+    padding-left: 10px; /* Ajouter du padding pour ne pas coller au bord */
+}
+    
+    
+  
+  
+.radio-option input[type="radio"] {
+    margin-right: 5px; /* espace entre le bouton radio et le texte */
+    background-color: #635d5d;
+    vertical-align: middle;
+    
+}
+  

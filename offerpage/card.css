@@ -1,0 +1,113 @@
+.custom-card {
+  display:flex;
+  flex-direction: column;
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: rgba(185, 170, 170, 0.27) 0px 7px 29px 0px;  background-color: #eceaea; /* Fond blanc */
+  transition: 0.3s; /* Animation de transition */
+  float: left;
+  margin-left: 100px; /* Déplace la carte de 20px vers la droite */
+  margin-top: 80px;  /* Déplace la carte de 20px vers le bas */
+  
+
+ 
+  
+}
+.custom-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(226, 217, 217, 0.2);
+}
+.card-row {
+  display: flex;
+  padding: 14px 28px;
+  flex-direction: row;
+}
+
+.card-image-container {/* Fond derrière l'image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+}
+
+.card-image {
+  width: 90px; /* Taille de l'image, à ajuster selon votre image */
+  height: 90px; /* Taille de l'image, à ajuster selon votre image */
+  object-fit: cover; /* Ajustement de l'image */
+  display: block; /* Centre l'image verticalement */
+  border-radius: 50%;
+
+}
+
+.card-content-container {
+  
+  flex-grow: 1; /* Prend le reste de l'espace disponible */
+  padding: 16px; /* Espace intérieur */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  
+  
+ 
+}
+
+.card-title {
+  font-size: 1rem; /* Taille du titre */
+  font-weight: bold; /* Titre en gras */
+  color: white; /* Couleur du texte */
+  text-align: left;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 0.875rem; /* Taille du texte */
+  color: rgb(157, 156, 156); /* Couleur du texte */
+  padding: 2px;
+  height: 80px;
+  width: 600px;
+
+  
+}
+
+
+.card-footer { /* Couleur du texte secondaire */
+  width: 100%; /* Espace avant le pied de page */
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  height: 1px;
+
+}
+
+.card-footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 10px; /* Espace avant les icônes */
+}
+
+.card-footer-text {
+  font-size: 15px; /* Taille du texte secondaire */
+  color: #dcd5d5; /* Couleur du texte secondaire */
+  text-align: right;
+
+}
+
+/* Pour gérer la réactivité */
+@media (max-width: 768px) {
+  .custom-card {
+    width: 100%; /* Largeur de la carte - ajustez selon vos besoins */
+    margin-left: 0px; /* Déplace la carte de 20px vers la droite */
+    margin-top: 0px; /* Déplace la carte de 20px vers le bas */
+    
+    
+
+  }
+
+  .card-row {
+    flex-direction: column; /* Les éléments se superposent verticalement */
+
+  }
+}
